@@ -1,4 +1,4 @@
-// export portalData
+// esportar listado de portales. portal/sitios
 let arraySites = [];
 
 document.querySelectorAll('.dnn-grid-cell.portal-list-container.undefined > .dnn-grid-cell').forEach(grid =>{
@@ -9,3 +9,4 @@ document.querySelectorAll('.dnn-grid-cell.portal-list-container.undefined > .dnn
 })
 
 console.log(arraySites)
+// fin listado de portales. portal/sitios
