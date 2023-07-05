@@ -1,5 +1,8 @@
 <meta charset="UTF-8">
-<!-- <LINK> CSS DEL HEADER. -->
+<link rel="stylesheet" href="https://netactica.com/portals/0/assets_for_all_results/wpage_mobile_2.0.css">
+
+<!--COLOCAR <LINK> CSS DEL HEADER. -->
+
 <div class="barProgress">
 </div>
 <div class="wpage" style="display: none;">
@@ -28,99 +31,18 @@
       </div>
 
 </div>
-<style>
-  .wpage{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
-  div#divLoading {
-    background: #f9f9f9;
-  }
-  .wpage {
-    box-sizing: border-box;
-    background-color: #F9F9F9;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    gap: 15px;
-  }
 
-  .wpage__container {
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-    justify-content: space-between;
-  }
+<script>
+        // document.title = "demoTravelinn" <--- colocar titulo del sitio;
+        // $('head').append('<link rel="SHORTCUT ICON" href=" --colocar link ICON-- " type="image/x-icon">');
+</script>
 
-  /* container1 */
-  .wpage__searchBlock {
-    height: 67%;
-  }
-
-  .wpage__filters--first {
-    height: 31px;
-    width: 193px;
-  }
-  .wpage__filters--search {
-    width: 100%;
-    height: 47px;
-  }
-  .wpage__filters--last {
-    height: 42px;
-    width: 246px;
-  }
-
-  .wpage__bar {
-    height: 2px;
-    width: 90%;
-  }
-
-  .skeleton {
-    border-radius: 5px;
-    animation: skeleton-loading 1s linear infinite alternate;
-  }
-
-  @keyframes skeleton-loading {
-    0% {
-        background-color: #F3F2F2;
-    }
-
-    100% {
-        background-color: #f7f7f7;
-    }
-  }
-  
-  div#divLoading:not([style*="display"])+div {
-    visibility: hidden;
-  }
-  div#divLoading:not([style*="display"]){
-    position:initial;
-  }
-  div#ulSteps>div {
-      height: initial!important;
-  }
-  .barProgress {
-      margin-top: -7px;
-      height: 4px;
-      width: 6px;
-      background-color: #8b8b8b;
-      border-radius: 0px 10px 10px 0px;
-  }
-    </style>
-    <script>
-        document.title = "demoTravelinn";
-        $('head').append('<link rel="SHORTCUT ICON" href="https://cmsdemo.netactica.com/Portals/1243/fav-travelinn.ico" type="image/x-icon">');
-    </script>
-
-    <script>
-
-      setTimeout(() => {
+<script>
+        setTimeout(() => {
         document.querySelector('.wpage').removeAttribute('style');
-      }, 300);
-      var i = 0;
-      function move() {
+        }, 300);
+        var i = 0;
+        function move() {
         if (i == 0) {
           i = 1;
           var elem = document.querySelector(".barProgress");
@@ -136,6 +58,6 @@
             }
           }
         }
-      }
-      move();
-    </script>
+        }
+        move();
+</script>
